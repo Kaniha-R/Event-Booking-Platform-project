@@ -118,7 +118,7 @@
     <p>Price per ticket: ₹<span id="price"></span></p>
 
     <h3>Choose Tickets</h3>
-    <p>Select number of tickets from the dropdown. Total price updates automatically.</p>
+    <p>Select number of tickets from the dropdown.</p>
 
     <select id="count" onchange="updateTotal()">
         <option value="1">1 Ticket</option>
@@ -132,7 +132,6 @@
     <a id="checkoutLink" href="pay.html">
         <button>Checkout</button>
     </a>
-
 </div>
 
 <script>
@@ -155,6 +154,6 @@
             "&total=" + (price * count);
     }
 </script>
-
 </body>
 </html>
+
