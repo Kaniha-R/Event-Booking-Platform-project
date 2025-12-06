@@ -129,7 +129,7 @@
 
     <h3>Total: ₹<span id="total"></span></h3>
 
-    <a id="checkoutLink" href="checkout.html">
+    <a id="checkoutLink" href="pay.html">
         <button>Checkout</button>
     </a>
 
@@ -149,7 +149,7 @@
         document.getElementById("total").innerText = price * count;
 
         document.getElementById("checkoutLink").href =
-            "checkout.html?event=" + eventName +
+            "pay.html?event=" + eventName +
             "&price=" + price +
             "&count=" + count +
             "&total=" + (price * count);
