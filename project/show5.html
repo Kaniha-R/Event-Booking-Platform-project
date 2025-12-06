@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Meetup Details</title>
+
+    <style>
+        header {
+            color: white;
+            background-color: #1e90ff;
+            text-align: center;
+            font-family: "Poppins", Arial, sans-serif;
+            font-size: 30px;
+            font-weight: bold;
+            padding: 20px;
+        }
+
+        .container {
+            font-size: 15px;
+            font-family: "Poppins", Arial, sans-serif;
+            padding: 50px;
+            font-size: 20px;
+        }
+                
+        .card {
+            background: white;
+            text-align: left;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px #aaa;
+            transition: .3s;
+        }
+
+        /* ⭐ Added Media Style */
+        .event-img {
+            width: 100%;
+            height: 250px;
+            border-radius: 10px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        button {
+            color: white;
+            background-color: #1e90ff;
+            font-size: 15px;
+            width: 100px;
+            height: 40px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        /* -------------------------- */
+        /*     RESPONSIVE DESIGN      */
+        /* -------------------------- */
+
+        @media (max-width: 900px) {
+            .container {
+                padding: 25px;
+            }
+            .card {
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            header {
+                font-size: 22px;
+                padding: 15px;
+            }
+
+            .container {
+                padding: 15px;
+                font-size: 16px;
+            }
+
+            .card {
+                padding: 15px;
+            }
+
+            .button-group {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .button-group button {
+                width: 100%;
+                height: 45px;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>Startup Meetup</header>
+
+<div class="container">
+<div class="events">
+    <div class="card">
+
+        <!-- ⭐ Added Event Image -->
+        <img src="startup.jpg" alt="Startup Meetup" class="event-img">
+
+        <h2>Startup Meetup - Hyderabad</h2>
+        <p><strong>Date:</strong> 22 Mar 2026</p>
+        <p><strong>Location:</strong> Hyderabad</p>
+        <p><strong>Price:</strong> ₹349</p>
+        <p><strong>Description:</strong> Network with startup founders, investors, and enthusiasts. Attend talks, workshops, and panel discussions. A must-attend event for aspiring entrepreneurs.</p>
+        
+        <h3>Schedule:</h3>
+        <ul>
+            <li>10:00 AM - Registration & Welcome</li>
+            <li>11:00 AM - Panel Discussion</li>
+            <li>01:00 PM - Networking Lunch</li>
+            <li>02:00 PM - Startup Pitch Session</li>
+            <li>04:00 PM - Closing & Awards</li>
+        </ul>
+        
+        <div class="button-group">
+            <button onclick="location.href='book-now.html?event=Startup Meetup&price=349'">Book Now</button>
+            <button onclick="location.href='index.html'">Back</button>
+        </div>
+
+    </div>
+</div>
+</div>
+</body>
+</html>
