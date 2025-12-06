@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dance Workshop Details</title>
+    
+    <style>
+        header {
+            color: white;
+            background-color: #1e90ff;
+            text-align: center;
+            font-family: "Poppins", Arial, sans-serif;
+            font-size: 30px;
+            font-weight: bold;
+            padding: 20px;
+        }
+
+        .container {
+            font-size: 15px;
+            font-family: "Poppins", Arial, sans-serif;
+            padding: 50px;
+            font-size: 20px;
+        }
+                
+        .card {
+            background: white;
+            text-align: left;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px #aaa;
+            transition: .3s;
+        }
+
+        button {
+            color: white;
+            background-color: #1e90ff;
+            font-size: 15px;
+            width: 100px;
+            height: 40px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        /* -------------------------- */
+        /*     RESPONSIVE DESIGN      */
+        /* -------------------------- */
+
+        @media (max-width: 900px) {
+            .container {
+                padding: 25px;
+            }
+            .card {
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            header {
+                font-size: 22px;
+                padding: 15px;
+            }
+
+            .container {
+                padding: 15px;
+                font-size: 16px;
+            }
+
+            .card {
+                padding: 15px;
+            }
+
+            .button-group {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .button-group button,
+            .button-group a button {
+                width: 100%;
+                height: 45px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<header>Dance Workshop</header>
+
+<div class="container">
+<div class="events">
+    <div class="card">
+        <h2>Dance Workshop - Pune</h2>
+        <p><strong>Date:</strong> 12 Apr 2026</p>
+        <p><strong>Location:</strong> Pune</p>
+        <p><strong>Price:</strong> ₹299</p>
+        <p><strong>Description:</strong> Learn exciting dance moves from professional choreographers. This workshop includes hip-hop, contemporary, and classical dance styles. Open for beginners and advanced dancers.</p>
+        
+        <h3>Schedule:</h3>
+        <ul>
+            <li>09:00 AM - Registration & Warm-up</li>
+            <li>10:00 AM - Hip-hop Session</li>
+            <li>12:00 PM - Contemporary Dance</li>
+            <li>02:00 PM - Lunch Break</li>
+            <li>03:00 PM - Classical Dance</li>
+            <li>05:00 PM - Performance & Closing</li>
+        </ul>
+
+        <div class="button-group">
+            <button onclick="location.href='book-now.html?event=Dance Workshop&price=299'">Book Now</button>
+            <a href="index.html"><button>Back</button></a>
+        </div>
+    </div>
+</div>
+</div>
+
+</body>
+</html>

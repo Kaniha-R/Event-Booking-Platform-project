@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Concert Details</title>
+    
+    <style>
+        header {
+            color: white;
+            background-color: #1e90ff;
+            text-align: center;
+            font-family: "Poppins", Arial, sans-serif;
+            font-size: 30px;
+            font-weight: bold;
+            padding: 20px;
+        }
+
+        .container {
+            font-size: 15px;
+            font-family: "Poppins", Arial, sans-serif;
+            padding: 50px;
+            font-size: 20px;
+        }
+                
+        .card {
+            background: white;
+            text-align: left;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px #aaa;
+            transition: .3s;
+        }
+
+        button {
+            color: white;
+            background-color: #1e90ff;
+            font-size: 15px;
+            width: 100px;
+            height: 40px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .button-group {
+            display: flex;          
+            gap: 10px;               
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<header>Music Concert</header>
+
+<div class="container">
+<div class="events">
+    <div class="card">
+        <div class="card">
+    <h3>Music Concert - Chennai</h3>
+    <p><strong>Date:</strong> 28 Dec 2025</p>
+    <p><strong>Location:</strong> Chennai</p>
+    <p><strong>Price:</strong> ₹499</p>
+    <p><strong>Description:</strong> Experience an electrifying night with top musicians performing live in Chennai. Enjoy your favorite tracks and feel the rhythm in this one-of-a-kind concert. Perfect for music lovers of all ages.</p>
+
+    <h4>Schedule:</h4>
+    <ul>
+        <li>6:00 PM - Doors Open</li>
+        <li>7:00 PM - Opening Act</li>
+        <li>8:00 PM - Main Performance</li>
+        <li>10:00 PM - Closing & Meet & Greet</li>
+    </ul>
+
+    <h4>Tickets:</h4>
+    <ul>
+        <li>General Admission: ₹499</li>
+        <li>VIP: ₹999 (Includes backstage access)</li>
+    </ul>
+
+        <div class="button-group">
+            <button onclick="location.href='book-now.html?event=Dance Workshop&price=299'">Book Now</button>
+            <a href="index.html"><button>Back</button></a>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
