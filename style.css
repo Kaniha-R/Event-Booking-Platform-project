@@ -84,8 +84,8 @@ button {
     }
 
     header {
-        font-size: 22px;
-        padding: 5px;
+        font-size: 21px;
+        padding: 10px;
     }
 }
 
@@ -95,6 +95,7 @@ button {
         height: 28px;
     }
 }
+
 
 
 
