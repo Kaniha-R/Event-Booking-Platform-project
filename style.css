@@ -82,6 +82,11 @@ button {
     .events {
         grid-template-columns: 1fr;
     }
+
+    header {
+        font-size: 22px;
+        padding: 10px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -90,4 +95,5 @@ button {
         height: 28px;
     }
 }
+
 
