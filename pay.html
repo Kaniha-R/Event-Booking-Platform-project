@@ -39,7 +39,6 @@
         .card {
             width: 300px;
             background: white;
-            text-align: left;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 5px #aaa;
@@ -51,14 +50,13 @@
             height: 35px;
             font-size: 16px;
             padding: 5px;
-            align-items: center;
         }
 
         button {
             color: white;
             background-color: #1e90ff;
             font-size: 18px;
-            width: 90px;
+            width: 150px;
             height: 40px;
             border-radius: 5px;
             border: none;
@@ -129,6 +127,7 @@
 <header>Checkout</header>
 <div class="container">
 <div class="card">
+    <center>
     <input type="text" id="name" placeholder="Full Name"><br><br>
     <input type="email" id="email" placeholder="Email"><br><br>
     <input type="text" id="card" placeholder="Card Number"><br><br>
@@ -139,6 +138,7 @@
         <h2>🎉 Booking Confirmed!</h2>
         <p>Your tickets have been booked successfully.</p>
     </div>
+    </center>
 </div>
 </div>
 <script>
@@ -157,8 +157,3 @@ function confirmBooking() {
 </script>
 </body>
 </html>
-
-
-
-
-
