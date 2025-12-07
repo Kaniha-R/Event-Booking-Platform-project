@@ -49,6 +49,14 @@ button {
     cursor: pointer;
 }
 
+.event-img {
+    width: 100%;
+    height: 220px;      
+    object-fit: cover;  
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
 /* --- Responsive Design --- */
 
 @media (max-width: 900px) {
@@ -62,4 +70,5 @@ button {
         grid-template-columns: 1fr;
     }
 }
+
 
