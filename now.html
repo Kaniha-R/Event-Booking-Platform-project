@@ -120,7 +120,7 @@
     <h3>Choose Tickets</h3>
     <p>Select number of tickets from the dropdown.</p>
 
-    <select id="count" onchange="updateTotal()">
+    <select id="count" onchange="updateTotal()" required>
         <option value="1">1 Ticket</option>
         <option value="2">2 Tickets</option>
         <option value="3">3 Tickets</option>
@@ -141,22 +141,20 @@
 
     document.getElementById("eventName").innerText = eventName;
     document.getElementById("price").innerText = price;
-    document.getElementById("total").innerText = price;
 
     function updateTotal() {
         let count = document.getElementById("count").value;
-        document.getElementById("total").innerText = price * count;
+        let total = price * count;
+
+        document.getElementById("total").innerText = total;
 
         document.getElementById("checkoutLink").href =
             "pay.html?event=" + eventName +
             "&price=" + price +
             "&count=" + count +
-            "&total=" + (price * count);
+            "&total=" + total;
     }
+    updateTotal();
 </script>
 </body>
 </html>
-
-
-
-
