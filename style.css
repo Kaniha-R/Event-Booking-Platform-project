@@ -91,6 +91,7 @@ button {
         font-size: 29px;
         padding-top: 10px;
         padding-bottom: 10px;
+        padding-left: 40px;
     }
 }
 
@@ -101,4 +102,5 @@ button {
     border-radius: 10px;
     margin-bottom: 15px;
 }
+
 
