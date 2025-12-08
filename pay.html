@@ -24,6 +24,18 @@
             padding: 20px;
             box-sizing: border-box;
         }
+        
+        form {
+            text-align: left;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        p {
+            text-align: center;
+        }
 
         .container {
             width: 300px;
@@ -127,27 +139,73 @@
 <header>Checkout</header>
 <div class="container">
 <div class="card">
-    <center>
-    <input type="text" id="name" placeholder="Full Name"><br><br>
-    <input type="email" id="email" placeholder="Email"><br><br>
-    <input type="text" id="card" placeholder="Card Number"><br><br>
+<center>
+<h2>Checkout</h2>
 
+<div class="summary">
+    <h3>Event Summary</h3>
+    <p><strong>Event:</strong> <span id="eventName"></span></p>
+    <p><strong>Tickets:</strong> <span id="ticketCount"></span></p>
+    <p><strong>Total Price:</strong> ₹<span id="totalPrice"></span></p>
+</div>
+
+<form>
+    <h3>Your Details</h3>
+
+    <label>Full Name</label>
+    <input type="text" id="name" placeholder="Enter your name" required><br><br>
+
+    <label>Email</label>
+    <input type="email" id="email" placeholder="Enter your email" required><br><br>
+
+    <label>Phone Number</label>
+    <input type="tel" id="number" placeholder="Enter phone number" required><br><br>
+
+    <h3>Payment Details</h3>
+
+    <label>Card Number</label>
+    <input type="text" id="card" placeholder="1234 5678 9012 3456" required><br><br>
+
+    <label>Expiry Date</label>
+    <input type="text" id="expiry" placeholder="MM/YY" required><br><br>
+
+    <label>CVV</label>
+    <input type="password" id="cvv" placeholder="123" required><br><br>
+
+    <p><a href="index.html">← Back to Events</a></p>
+</form>
     <button onclick="confirmBooking()">Confirm Booking</button>
 
     <div id="successBox">
         <h2>🎉 Booking Confirmed!</h2>
         <p>Your tickets have been booked successfully.</p>
     </div>
-    </center>
+</center>
 </div>
 </div>
 <script>
+// Fetch values from URL
+const urlParams = new URLSearchParams(window.location.search);
+
+const eventName = urlParams.get("event");
+const ticketCount = urlParams.get("count");
+const totalPrice = urlParams.get("total");
+
+// Insert into HTML
+document.getElementById("eventName").innerText = eventName;
+document.getElementById("ticketCount").innerText = ticketCount;
+document.getElementById("totalPrice").innerText = totalPrice;
+
+// Confirm Booking
 function confirmBooking() {
     let n = document.getElementById("name").value;
     let e = document.getElementById("email").value;
+    let p = document.getElementById("number").value;
     let c = document.getElementById("card").value;
+    let en = document.getElementById("expiry").value;
+    let v = document.getElementById("cvv").value;
 
-    if(n === "" || e === "" || c === ""){
+    if (n === "" || e === "" || p === "" || c === "" || en === "" || v === "") {
         alert("Please fill all details!");
         return;
     }
